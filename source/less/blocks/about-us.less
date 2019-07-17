@@ -1,0 +1,160 @@
+.about-us {
+  width: @mobile-content-width;
+  .center-margin();
+  padding-top: 35px;
+  padding-bottom: 13px;
+}
+
+.about-us__list {
+  .list();
+  padding-top: 35px;
+  color: @dark;
+  .normal-font(17px; 20px; 700);
+}
+
+
+.about-us svg {
+  display: block;
+  margin-bottom: 15px;
+  fill: @company-color-light;
+  overflow: hidden;
+}
+
+.about-us__item {
+  margin-bottom: 41px;
+}
+
+.about-us__item--flower svg {
+  width: 32px;
+  height: 37px;
+  margin-top: -1px;
+  margin-left: 8px;
+}
+
+.about-us__item--money svg {
+  width: 47px;
+  height: 27px;
+  margin-top: -10px;
+  margin-bottom: 25px;
+}
+
+.about-us__item--heart svg {
+  width: 34px;
+  height: 27px;
+  margin-top: -5px;
+  margin-bottom: 20px;
+  margin-left: 7px;
+}
+
+.about-us__item--ball svg {
+  width: 35px;
+  height: 34px;
+  margin-top: -8px;
+  margin-left: 2px;
+  margin-bottom: 18px;
+}
+
+.about-us__item--rocket svg {
+  width: 55px;
+  height: 23px;
+  margin-top: -9px;
+  margin-left: -6px;
+  margin-bottom: 28px;
+}
+
+.about-us__item--gift svg {
+  width: 33px;
+  height: 32px;
+  margin-top: -10px;
+  margin-left: 3px;
+  margin-bottom: 20px;
+}
+
+@media (min-width: @tablet-width) {
+  .about-us {
+    width: 675px;
+    padding-top: 69px;
+    padding-bottom: 27px;
+  }
+
+  .about-us__list {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 50px;
+    padding-left: 4px;
+  }
+
+  .about-us__item {
+    width: 299px;
+    padding-right: 35px;
+    margin-bottom: 57px;
+    font-size: 20px;
+    line-height: 22px;
+  }
+
+  .about-us__item--flower svg {
+    padding-bottom: 2px;
+    margin-left: 8px;
+  }
+
+  .about-us__item--money {
+    order: 1;
+  }
+
+  .about-us__item--money svg {
+    margin-top: 0;
+    margin-bottom: 25px;
+  }
+
+  .about-us__item--heart {
+    order: 2;
+  }
+
+  .about-us__item--heart svg {
+    margin-top: 5px;
+    margin-bottom: 21px;
+    margin-left: 7px;
+  }
+
+  .about-us__item--ball svg {
+    margin-top: 1px;
+    margin-left: 3px;
+    margin-bottom: 18px;
+  }
+
+  .about-us__item--rocket {
+    order: 1;
+  }
+
+  .about-us__item--rocket svg {
+    margin-top: 2px;
+    margin-left: -6px;
+    margin-bottom: 28px;
+  }
+
+  .about-us__item--gift {
+    order: 2;
+  }
+
+  .about-us__item--gift svg {
+    margin-top: 1px;
+    margin-left: 3px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .about-us {
+    width: 711px;
+    padding-top: 87px;
+    padding-bottom: 34px;
+  }
+
+  .about-us__item {
+    width: 315px;
+    padding-right: 35px;
+    margin-bottom: 57px;
+    font-size: 20px;
+    line-height: 22px;
+  }
+}

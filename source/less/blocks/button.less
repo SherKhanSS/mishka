@@ -1,0 +1,33 @@
+.button {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: @mobile-content-width;
+  min-height: 52px;
+  .center-margin();
+  text-align: center;
+  color: @text-light;
+  .normal-font(18px; 20px; 700);
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 2px solid @text-light;
+  background-color: @light;
+  transition: 0.4s;
+}
+
+.button:hover,
+.button:focus {
+  color: @light;
+  background-color: @text-light;
+}
+
+.button:active {
+  color: fade(@light, 30);
+}
+
+@media (min-width: @tablet-width) {
+  .button {
+    font-size: 17px;
+  }
+}

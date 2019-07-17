@@ -1,0 +1,29 @@
+.goods__list {
+  width: @mobile-content-width;
+  .list();
+  .center-margin();
+}
+
+.goods__item {
+  border: 1px solid @goods-border;
+  margin-bottom: 30px;
+}
+
+@media (min-width: @tablet-width) {
+  .goods__list {
+    width: @tablet-content-width;
+  }
+
+  .goods__item {
+    margin-bottom: 52px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .goods__list {
+    display: flex;
+    justify-content: space-between;
+    width: @desktop-content-width;
+    padding-right: 5px;
+  }
+}
